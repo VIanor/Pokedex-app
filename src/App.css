@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+ul {
+  margin-bottom: 5px;
+}
+
+li {
+  margin-left: 30px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  background: url("img/back.jpg");
+  background-size: 100%;
+}
+
+.header {
+  width: 60%;
+  height: auto;
+  margin: 100px auto 15px auto;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #C10000;
+}
+
+.header h5 {
+  padding-left: 40px;
+}
+
+.filter {
+  width: 60%;
+  height: auto;
+  margin: 0 auto 15px auto;
+  padding: 13px 0;
+  background-color: #C10000;
+}
+
+.filter input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px white;
+  width: 25%;
+  color: #fff;
+  margin: 0 20px 0 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+.filter select {
+  background-color: transparent;
+  border: none;
+  margin-left: 5px;
+  outline: none;
+}
+
+.filter select option {
+  background: #C10000;
+}
+
+.menu {
+  display: flex;
+  width: 60%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.list {
+  background: #C10000;
+  width: 30%;
+  margin-right: 15px;
+}
+
+.pokemons {
+  background-color: black;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  height: 200px;
+  margin-top: 25px;
+  border-radius: 10%;
+  overflow: scroll;
+}
+
+.pokemons p:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.pokemons::-webkit-scrollbar { width: 0; }
+.pokemons { -ms-overflow-style: none; }
+.pokemons { overflow: -moz-scrollbars-none; }
+
+.buttons {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.buttons button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  background: black;
+  border: none;
+  border-radius: 20%;
+  outline: none
+}
+
+.disp {
+  background: #C10000;
+  width: 70%;
+  padding-top: 10px
+}
+
+.disp p {
+  margin-bottom: 5px;
+}
+
+.infobox {
+  background: black;
+  padding-left: 20%;
+  padding-top: 20px;
+  width: 50%;
+  height: 60%;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 876px) {
+  
+  .menu {
+    display: block
+  }
+
+  .list {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+  }
+
+  .disp {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 385px) {
+  .infobox {
+    width: 70%;
+  }
+}
