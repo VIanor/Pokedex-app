@@ -2,22 +2,21 @@
   "name": "pokedex-mobx",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://VIanor.gitgub.io/Pokedex-app",
+  "homepage": "https://vianor.gitgub.io/Pokedex-app",
   "dependencies": {
-    "@babel/polyfill": "^7.4.0",
     "@babel/preset-env": "^7.4.1",
-    "mobx-utils": "^5.2.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "mobx-react-lite": "^1.2.0",
+    "node-sass": "^4.11.0",
+    "react": "next",
+    "react-dom": "next",
     "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier-standard 'src/**/*.js'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,17 +34,9 @@
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
-    "gh-pages": "^2.0.1",
     "mobx": "^5.9.0",
-    "mobx-react": "^5.4.3"
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ],
-    "plugins": [
-      "transform-decorators-legacy",
-      "transform-class-properties"
-    ]
+    "mobx-react": "^5.4.3",
+    "mobx-utils": "^5.2.0",
+    "prettier-standard": "^9.1.1"
   }
 }
